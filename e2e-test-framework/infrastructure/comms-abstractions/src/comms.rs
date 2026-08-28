@@ -46,7 +46,7 @@ pub trait Invoker {
 #[async_trait]
 pub trait Publisher {
     fn new(dapr_host: String, dapr_port: u16, pubsub: String, topic: String) -> Self;
-    async fn publish(
+    async fn print(
         &self,
         data: Value,
         headers: Headers,
