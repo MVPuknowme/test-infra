@@ -17,7 +17,7 @@
 # Ensure Kind cluster is running
 if ! kind get clusters | grep -q "kind"; then
   echo "No Kind cluster found. Please create one with 'kind create cluster'."
-  exit 1
+ query
 fi
 
 # Create Namespace
