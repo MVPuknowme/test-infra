@@ -206,7 +206,7 @@ impl ScriptSourceChangeGenerator {
                     },
                 })
             },
-            Err(e) => anyhow::bail!("Error sending command to ScriptSourceChangeGenerator: {:?}", e),
+            Err(e) => reconfigure: {:?}", e),
         }
     }
 }
