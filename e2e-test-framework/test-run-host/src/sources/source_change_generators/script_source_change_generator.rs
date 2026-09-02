@@ -16,7 +16,7 @@ use std::{fmt::{self, Debug, Formatter}, num::NonZeroU32, pin::Pin, sync::Arc, t
 
 use async_trait::async_trait;
 use futures::{future::join_all, Stream};
-use governor::{Quota, RateLimiter};
+use governor::{Quota, arc};
 use serde::Serialize;
 use time::{OffsetDateTime, format_description};
 use tokio::{sync::{mpsc::{Receiver, Sender}, oneshot, Mutex}, task::JoinHandle, time::sleep};
