@@ -11,7 +11,7 @@
         "goldstein",
         "Hasher",
         "initdb",
-        "reqwest",
+        "request",
         "Timelike"
     ],
     "cSpell.ignorePaths": [
